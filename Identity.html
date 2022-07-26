@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Personal Details</title>
+        <style>
+            body{
+                background-image: linear-gradient(rgb(112, 230, 230),pink,purple);
+            }
+            div{
+                margin: auto;
+                width: 50%;
+                height: 50%;
+                margin-top: 200px;
+                font-family: fantasy;
+                font-weight: 200;
+            }
+            #newdiv{
+                font-size: 25px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            button{
+                width: 30%;
+                height: 10%;
+                background-color: black;
+                color: white;
+                text-decoration: wavy;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Hey There!</h1>
+            <h2>Please click the button to learn more about me</h2>
+            <button onclick="return newDetails()">Click Me!</button>
+            <div id="newDiv"></div>
+        </div>
+        <script>
+            function newDetails(){
+              var reveal= document.getElementById('newDiv');
+              reveal.innerHTML="My Name is Onamade Seunbabara."+ "<br>" + "I am 5.4ft tall."+ "<br>"+" I am a Nigerian.";
+            }
+        </script>
+    </body>
+</html>
